@@ -14,7 +14,6 @@ async function getUsersLowProfiles(num) {
     );
     return response.data.items;
   } catch (error) {
-    // TODO handle error
     throw new Error("somt w w w fetch");
   }
 }
@@ -34,7 +33,6 @@ async function getUsersFullProfiles(lowProfileArray) {
       return res;
     });
   } catch (error) {
-    // TODO handle error
     throw new Error("smt w w w fetch");
   }
 }
@@ -46,7 +44,6 @@ async function getUserByName(name) {
     });
     return response.data;
   } catch (error) {
-    // TODO handle error
     throw new Error("smt w w w fetch");
   }
 }
@@ -56,7 +53,6 @@ async function getOrganizations(url) {
     const response = await axios.get(url, {
       headers: { Authorization: `Bearer ${token}` },
     });
-    // console.log(response);
     return response.data;
   } catch (error) {
     throw new Error("somt w w sdsdw fetch");
@@ -68,7 +64,6 @@ async function getRepos(url) {
     const response = await axios.get(url, {
       headers: { Authorization: `Bearer ${token}` },
     });
-    // console.log(response);
     return response.data;
   } catch (error) {
     throw new Error("somt w w sdsdw fetch");
