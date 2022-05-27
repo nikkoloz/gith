@@ -5,7 +5,6 @@ import UserCard from "../components/UserCard.js";
 function Dashboard() {
   const { users, error, loading } = useContext(AppContext);
   if (loading) {
-    // TODO LOADING HANDLING
     return <h1>Loading...</h1>;
   }
 
