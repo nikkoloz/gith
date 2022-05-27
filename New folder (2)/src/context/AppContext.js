@@ -20,7 +20,6 @@ function AppContextProvider({ children }) {
       })
       .catch((error) => {
         console.log(error);
-        // TODO ERROR
         setError(error);
       })
       .finally(() => setLoading(false));
