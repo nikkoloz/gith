@@ -6,8 +6,6 @@ import OrgCard from "../components/OrgsCard.js";
 import findInFavorites from "../functions/findInFavorites.js";
 import Checkbox from "../components/Checkbox.js";
 function Preview() {
-  // const [loading, setLoading] = useState(false);
-  // const [error, setError] = useState('');
   const [user, setUser] = useState({});
   const [userOrgs, setUserOrgs] = useState([]);
   const [userRepos, setUserRepos] = useState([]);
@@ -38,9 +36,7 @@ function Preview() {
           {user.bio && <span>Bio: {user.bio}</span>}
           <h1>Followers: {user.followers}</h1>
           <h1>Following: {user.following}</h1>
-          {/* //// */}
           <Checkbox user={user} checked={checked} setChecked={setChecked} />
-          {/* ///// */}
         </div>
       </div>
       <hr />
