@@ -1,0 +1,37 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.js\" ",
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html",
+    "lint": "eslint  \"src/**/*.{js,jsx}\"",
+    "lint:fix": "eslint --fix  \"src/**/*.{js,jsx}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "history": "^5.3.0",
+    "jwt-decode": "^3.1.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "parcel": "^2.5.0",
+    "prettier": "^2.6.2",
+    "process": "^0.11.10"
+  }
+}
